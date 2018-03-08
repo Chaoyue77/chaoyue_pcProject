@@ -1,5 +1,5 @@
 define(["jquery", "cookie"], function() {   //定义模块
-	$("header").load("/src/html/include/header.html", function(){
+	$("header").load("/html/include/header.html", function(){
 		/* 绑定搜索键盘事件 */
 		$(".search .word").on("keyup", function(){
 			// jsonp 接口
@@ -23,5 +23,9 @@ define(["jquery", "cookie"], function() {   //定义模块
 		let user = $.cookie("loginUser");
 		if (user)
 			$(".login_reg").html(`<a href="${user}"></a>`);
+	});
+
+	$.get("/html/include/footer.html", function(data){
+		$("footer").append(data);
 	});
 });
