@@ -1,37 +1,110 @@
-body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
-ul li {list-style: none;}
-a {text-decoration: none;}
-.clearfix:after{
-	content: ".";
-	display: block;
-	height: 0;
-	clear: both;
-	overflow: hidden;
-	*zoom:1;
-} 
-img {
-	vertical-align: top;
+/******************banner部分************************/
+.banner {
+	margin-top: 122px;
+	height: 601px;
 }
-header{
-	height:122px;
-	background-color:#ccc;
-	padding-left: 40px;
-	box-sizing: border-box;
-}
-.logo h1 {
-	height: 122px;
-	background: url("../images/logo.png") no-repeat;
-	background-size: 200px 122px;
-}
+/****************主导航部分***********************/
 nav{
 	height: 670px;
-	background-color: pink;
+	padding: 125px 0 165px 50px; 
+	box-sizing: border-box;
+	ul li {
+		text-align: center;
+		float: left;
+		width: 25%;
+		cursor: pointer;
+	}
+	h3 {
+		margin-top: 10px;
+		font-weight: 400;
+		color: #2B2B2B;
+	}
+	span {
+		color: #808080;
+	}
 }
+/**************************商品主体部分**********************************/
 .main {
-	height: 2826px;
-	background-color: yellow;
-}
-footer {
-	height: 225px;
-	background-color: blue;
+	height: 2720px;
+	position: relative;
+	h3 {
+		background-color: #fff;
+		width: 145px;
+		height: 60px;
+		position: absolute;
+		top: -13px;
+		left: 565px;
+		font-size: 22px;
+		text-align: center;
+		font-family: simsun;
+	}
+	h3>p {
+		font-size: 18px;
+		text-align: left;
+		font-weight: 400;
+		line-height: 29px;
+		color: #A9A9A9;
+	}
+	.kh-poster {
+		height: 630px;
+		box-sizing: border-box;
+		margin-bottom: 120px;
+		padding: 75px 230px 0 80px; 
+	}
+	.kh-poster>img{
+		float: left;
+	}
+	.poster1 {
+		width: 400px;
+		height: 490px;
+		float: right;
+		padding-top: 60px;
+		line-height: 30px;
+		color: #666;
+		text-align: center;
+		text-indent: 2em;
+		font-size: 12px;
+	}
+	.kh-products {
+		width: 1200px;
+		height: 400px;
+		margin-left: 40px;
+		margin-bottom: 140px;
+	}
+	.kh-prod,.face-prod {
+		width: 23%;
+		text-align: center;
+		float: left;
+		margin-right: 20px;
+	}
+	.kh-prod p ,.face-prod p {
+		height: 40px;
+		line-height: 40px;
+		color: #666;
+		border-bottom: 1px dashed #CCCCCC;
+	}
+	.kh-prod span, .face-prod span {
+		display: block;
+		height: 44px;
+		line-height: 44px;
+		color: #C40000;
+		font-weight: 700;
+		font-size: 24px;
+	}
+	.kh-prod button, .face-prod button {
+		width: 225px;
+		height: 33px;
+		background-color: #C40000;
+		color: #fff;
+		border:none;
+		border-radius: 5px;
+	}
+	.face-pro {
+		padding: 100px 130px 0 65px;
+	}
+	.face-pro>img {
+		margin-right: 70px;
+		margin-top: 60px;
+		float: left;
+	}
 }

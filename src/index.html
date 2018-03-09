@@ -5,27 +5,92 @@
 	<title>首页</title>
 	<script src="lib/requirejs/require.js" data-main="js/index"></script>
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/common.css">
 </head>
 <body>
 	<header></header>
 	<div class="banner">
 		<a href="#"><img src="images/banner2.png" style="width: 100%"></a>
 	</div>
-	<nav></nav>
+	<nav>
+		<ul>
+			<li>
+				<img src="images/pic1.png">
+				<h3>新品上市</h3>
+				<span>NEW PRODUCT</span>
+			</li>
+			<li>
+				<img src="images/pic2.png">
+				<h3>热门推荐</h3>
+				<span>HOT PRODUCT</span>
+			</li>
+			<li>
+				<img src="images/pic3.png">
+				<h3>唇妆</h3>
+				<span>THE LIPS</span>
+			</li>
+			<li>
+				<img src="images/pic4.png">
+				<h3>眼妆</h3>
+				<span>EYE MAKEUP</span>
+			</li>
+		</ul>
+	</nav>
 	<div class="main">
-		<h1>商品列表信息</h1>
-		<div class="list"></div>
-		<script type="text/html" id="list_template">
-			{{each list as prod}}   <!-- 模板引擎 -->
-				<div class="prod">
-					<div class="id">{{prod.id}}</div>
-					<div class="title">{{prod.title}}</div>
-					<div class="price">{{prod.price}}</div>
-					<div class="img">{{prod.img}}</div>
+		<hr>
+		<h3>
+			艳妖口红
+			<p>2018 NEW ARRIVAL</p>
+		</h3>
+		<div class="kouhong">
+			<div class="kh-poster">
+				<img src="images/poster1.jpg">
+				<div class="poster1">
+					<img src="images/poster2.png">
+					<p>新款质地很水润，涂上后会随着自己唇色变得<br>自然有光泽，最大的卖点是持久度很好，纯正哑光雾面妆感，<br>很容易推开，唇釉质地偏干，持久度相当惊人</p>
 				</div>
-			{{/each}}
-		</script>
+			</div>			
+			<div class="kh-products"></div>
+			<script type="text/html" id="list_template">
+				{{each list as prod}}   <!-- 模板引擎 -->
+					<div class="kh-prod">
+						<div class="id" style="display: none;">{{prod.id}}</div>
+						<div class="img"><img src="{{prod.img}}" style="width: 282px"></div>
+						<p class="title">{{prod.title}}</p>
+						<span class="price">{{prod.price}}</span>					
+						<button>购买</button>
+					</div>
+				{{/each}}
+			</script>
+		</div>
+		<div class="face">
+			<div class="face-poster">
+				<img src="images/index01.png">
+			</div>
+			<div class="face-pro">
+				<img src="images/face.png">
+				<div class="face-products"></div>
+				<script type="text/html" id="face_template">
+					{{each list as prod}}   <!-- 模板引擎 -->
+						<div class="face-prod">
+							<div class="id" style="display: none;">{{prod.id}}</div>
+							<div class="img"><img src="{{prod.img}}" style="width: 282px"></div>
+							<p class="title">{{prod.title}}</p>
+							<span class="price">{{prod.price}}</span>					
+							<button>购买</button>
+						</div>
+					{{/each}}
+				</script>
+				<!-- <div class="face-products">
+					<div class="face-prod">
+						
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
 	</div>
 	<footer></footer>
+	<aside></aside>
 </body>
 </html>

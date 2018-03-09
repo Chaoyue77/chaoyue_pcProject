@@ -3,10 +3,16 @@
 	"res_error":"",
 	"res_body":{
 		"data":[
-			{"id":1, "title":"商品1", "price": 999, "img":"xxx1.jpg"},
-			{"id":2, "title":"商品2", "price": 888, "img":"xxx2.jpg"},
-			{"id":3, "title":"商品3", "price": 666, "img":"xxx3.jpg"},
-			{"id":4, "title":"商品4", "price": 333, "img":"xxx4.jpg"}
+			{"id":1, "title":"美宝莲好气色轻唇膏", "price": "￥136", "img":"images/prod1.jpg"},
+			{"id":2, "title":"美丽法则恒彩水润唇膏口红笔", "price": "￥148", "img":"images/prod2.jpg"},
+			{"id":3, "title":"甜蜜奶油精华保湿软芯唇膏 ", "price": "￥98", "img":"images/prod3.jpg"},
+			{"id":4, "title":"伊蒂之屋-星愿物语口红 ", "price": "￥129", "img":"images/prod4.jpg"}
+		],
+		"facedata":[
+			{"id":1, "title":"Stylenanda婴肌还幼美白BB霜 ", "price": "￥258", "img":"images/face1.jpg"},
+			{"id":2, "title":"Almay矿物三色眼影 ", "price": "￥149", "img":"images/face2.jpg"},
+			{"id":3, "title":"梵柏莎女王诱惑眼眉彩盒  ", "price": "￥99", "img":"images/face3.jpg"},
+			{"id":4, "title":"A'PIEU-真实雾面口红 ", "price": "￥159", "img":"images/face4.jpg"}
 		]
 	}
-}
+}      

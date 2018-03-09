@@ -1,0 +1,118 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+ul li {list-style: none;}
+a {text-decoration: none;color: #4D4D4D;}
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	*zoom:1;
+} 
+img{
+	vertical-align: top;
+}
+input{outline: none; border:0;float: left;}
+/***************************头部**********************************/
+$headerHeight: 122px;
+$searchHeight: 25px;
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: $headerHeight;
+	padding-left: 40px;
+	box-sizing: border-box;
+	background-color: #fff;
+	ul li a{
+		height: $headerHeight;
+		line-height: $headerHeight;
+		float: left;
+		display: block;
+		padding:0 30px;	
+		box-sizing: border-box;
+		&:hover{
+			color: #000;	
+			border-top: 2px solid #000;
+		}
+	}
+	.logo h1 {
+		width:300px;
+		height: $headerHeight;
+		background: url("../images/logo.png") no-repeat;
+		background-size: 200px $headerHeight;
+		float: left;
+		cursor: pointer;
+	}
+	.search {
+		margin: 48px 0 0 30px;
+		width: 300px;
+		height: $searchHeight;
+		float: left;
+		border:1px solid #ccc;
+		position: relative;
+	}
+	.search input[type="text"]{
+		width: 250px;
+		height: $searchHeight;
+		color: #ccc;
+		padding: 8px;
+		box-sizing: border-box;
+	}
+	.search input[type="submit"]{
+		width: 50px;
+		height: $searchHeight;
+		color: #4D4D4D;
+	}
+	.suggest_info {
+		position: absolute;
+		top: $searchHeight;
+		left: 0;
+		color: #000;
+		cursor: default;
+		font-size: 12px;
+		line-height: 20px;
+		border:1px solid #ccc;
+		border-top: 0;
+		background-color: #fff;
+		width: 240px;
+		padding-left: 8px;
+	}
+}  
+/**********************************尾部****************************************/
+footer {
+	height: 225px;
+	background-color: #1F1D1C;
+	padding-top: 72px;
+	.footer-r {
+		width: 285px;
+		height: 100%;
+		float: right;
+	}
+	.footer-l dl{
+		width: 175px;
+		padding-left: 60px;
+		float: left;
+		color: #737373;
+		line-height: 24px;
+		font-size: 12px;
+	} 
+	.footer-l dl dt {
+		font-size: 14px;
+		color: #969696;
+	}
+}
+
+/*************************************侧边固定条********************************************/
+aside {
+	width: 35px;
+	height: 90%;
+	background-color: #202020; 
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 3;
+}
+
