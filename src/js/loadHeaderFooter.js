@@ -19,7 +19,6 @@ define(["jquery", "cookie"], function() {   //定义模块
 				}
 			});
 		});
-
 		//阻止事件冒泡，点击除了搜索框的其他部分下拉菜单消失
 		$(".search").click(function(event){
 			event.stopPropagation();    
@@ -33,11 +32,7 @@ define(["jquery", "cookie"], function() {   //定义模块
 			$(".search :text").val($(this).text());
 			$(".suggest_info").empty();
 		})
-
-		/* 查询是否有登录用户 */
-		let user = $.cookie("loginUser");
-		if (user)
-			$(".login_reg").html(`<a href="${user}"></a>`);
+		
 	});
 	//加载尾部
 	$.get("/html/include/footer.html", function(data){
@@ -47,4 +42,23 @@ define(["jquery", "cookie"], function() {   //定义模块
 	$.get("/html/include/aside.html", function(data){
 		$("aside").append(data);
 	});
+
+	$(function(){
+		/* 查询是否有登录用户 */
+		let user = $.cookie("loginUser");
+		if (user){
+			/*$(".login_reg").html(`<a href="${user}"></a>`);*/
+			$(".aside-t").on("click","i",function(){
+				if($(this).attr('data-id') === "gouwuchekong"){
+					
+					
+				}else if($(this).attr('data-id') === "wujiaoxing"){
+					
+				}else{
+					
+				}
+			})
+		}
+		
+	})
 });

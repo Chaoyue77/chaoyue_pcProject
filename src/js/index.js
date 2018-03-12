@@ -8,6 +8,5 @@ require(["config"], function(){
 			$(".kh-products").html(html);
 			$(".face-products").html(facehtml);
 		});
-		
 	});
 });

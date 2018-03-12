@@ -12,7 +12,7 @@ a {text-decoration: none;color: #4D4D4D;}
 img{
 	vertical-align: top;
 }
-input{outline: none; border:0;float: left;}
+input{outline: none; border:0;}
 /***************************头部**********************************/
 $headerHeight: 122px;
 $searchHeight: 25px;
@@ -60,11 +60,13 @@ header{
 		color: #ccc;
 		padding: 8px;
 		box-sizing: border-box;
+		float: left;
 	}
 	.search input[type="submit"]{
 		width: 50px;
 		height: $searchHeight;
 		color: #4D4D4D;
+		float: left;
 	}
 	.suggest_info {
 		position: absolute;
@@ -114,5 +116,42 @@ aside {
 	top: 0;
 	right: 0;
 	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	cursor: default;
+	.aside-t {
+		flex: 1;
+		text-align: center;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.aside-t i {
+		font-size: 22px;
+		height: 40px;
+		line-height: 40px;
+	}
+	.aside-t>i:hover,
+	.shopCar:hover {
+		background-color: red;
+	}
+	.aside-t p {
+		font-size: 14px;
+	}
+	.aside-t p span {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		margin-top: 5px;
+		background-color: red;
+
+	}
+	.aside-b {
+		flex: 1;
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
 }
 

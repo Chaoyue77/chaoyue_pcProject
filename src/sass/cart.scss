@@ -1,0 +1,89 @@
+.top {
+	margin-top:122px;
+}
+.cart {
+	width: 90%;
+	height: 500px;
+	margin:0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+	thead {
+		display: block;
+		height: 40px;
+		/*width: 100%;*/
+		background-color: #F8F8F8;
+	}
+	tr {display: block;}
+	thead td, tbody td {
+		display: inline-block;
+		height: 40px;
+		width: 108px;
+		line-height: 40px;
+		text-align: center;
+	}
+	.two {
+		width: 528px;
+	}
+	tbody {
+		color: #666;
+		font-size: 12px;
+	}
+	tbody tr {
+		height: 105px;
+		line-height: 105px;
+		border-bottom: 1px solid #ccc;
+	}
+	tbody td {
+		height: 62px;
+		line-height: 62px;
+	}
+	tbody td span {
+		display: inline-block;
+		width: 62px;
+		height: 62px;
+		border:1px solid #ccc;
+		margin-right: 10px;
+	}
+	.amounts {
+		width: 108px;
+		height: 62px;
+		padding-top: 15px;
+		padding-left: 18px;
+		box-sizing: border-box;
+	}
+	.amount, .minus, .add {
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		float: left; 
+	}
+	input[type = 'checkbox'] {
+		width: 20px;
+		height: 20px;
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+	tfoot tr {
+		float: right;
+		color: #2B2B2B;
+		font-size: 16px;
+		line-height: 70px;
+	}
+	.all_pri {
+		font-size: 30px;
+		font-weight: 700;
+	}
+	.cal {
+		float: right;
+		line-height: 70px;
+	}
+	.cal input {
+		width: 180px;
+		height: 40px;
+		background-color: #2B2B2B;
+		color: #fff;
+		font-size: 16px;
+		font-weight: 700;
+		border-radius: 5px;
+	}
+}

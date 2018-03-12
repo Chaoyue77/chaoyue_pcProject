@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>购物车</title>
+	<script src="../lib/requirejs/require.js" data-main="../js/login"></script>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/cart.css">
+	<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css">
+</head>
+<body>
+<header></header>
+<div class="top"></div>
+<div class="cart">
+	<table>
+		<thead>
+    		<tr>
+    			<td><label><input type="checkbox" class="ck_all">全选</label></td>
+    			<td class="two">名称</td>
+    			<td>价格</td>
+    			<td>数量</td>
+    			<td>小计</td>
+    			<td>操作</td>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td><input type="checkbox"></td>
+    			<td class="two"><span><img src="../images/prod3.jpg" style="width: 62px"></span>甜蜜奶油精华保湿软芯唇膏</td>
+    			<td>￥136.00</td>
+    			<td class = "amounts"><button class="minus">-</button><input type="text" value=1 size="2" class="amount"><button class="add">+</button></td>
+    			<td>￥136.00</td>
+    			<td><i class="iconfont icon-shanchu"></i></td>
+    		</tr>
+    	</tbody>
+    	<tfoot>
+    		<tr>
+    			<td>应付金额：</td>
+    			<td class="all_pri">￥136.00</td>
+    		</tr>
+    	</tfoot>
+	</table>
+	<div class="cal">
+		<a href="../index.html">继续购物</a>
+		<input type="button" name="calculator" value="结算订单">
+	</div>
+</div>
+<footer></footer>
+<aside></aside>
+</body>
+</html>
