@@ -58,8 +58,8 @@
 						<div class="id" style="display: none;">{{prod.id}}</div>
 						<div class="img"><img src="{{prod.img}}" style="width: 282px"></div>
 						<p class="title">{{prod.title}}</p>
-						<span class="price">{{prod.price}}</span>					
-						<button>购买</button>
+						<span class="price">{{prod.price}}</span>				
+						<button class="buy">购买</button>
 					</div>
 				{{/each}}
 			</script>
@@ -72,13 +72,13 @@
 				<img src="images/face.png">
 				<div class="face-products"></div>
 				<script type="text/html" id="face_template">
-					{{each list as prod}}   <!-- 模板引擎 -->
+					{{each list2 as prod}}   <!-- 模板引擎 -->
 						<div class="face-prod">
 							<div class="id" style="display: none;">{{prod.id}}</div>
 							<div class="img"><img src="{{prod.img}}" style="width: 282px"></div>
 							<p class="title">{{prod.title}}</p>
 							<span class="price">{{prod.price}}</span>					
-							<button>购买</button>
+							<button class="buy">购买</button>
 						</div>
 					{{/each}}
 				</script>

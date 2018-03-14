@@ -36,8 +36,13 @@
 	}
 	.register-but input[type='submit'] {
 		height: 50px;
-		width: 300px;
-		margin-left: 100px;
+		width: 190px;
+		margin-left: 130px;
 		font-size: 18px;
+	}
+	.email_info {
+		font-size: 12px;
+		color: #f20;
+		float: right;
 	}
 }

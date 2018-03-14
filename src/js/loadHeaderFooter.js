@@ -10,7 +10,6 @@ define(["jquery", "cookie"], function() {   //定义模块
 				url : url,
 				dataType : "jsonp",
 				success : function(data){
-					// console.log(data);
 					let html = "";
 					data.result.forEach(function(curr){
 						html += `<div>${curr[0]}</div>`;
@@ -31,34 +30,31 @@ define(["jquery", "cookie"], function() {   //定义模块
 		$(".suggest_info").on("click", "div", function(){
 			$(".search :text").val($(this).text());
 			$(".suggest_info").empty();
-		})
-		
+		});		
 	});
 	//加载尾部
 	$.get("/html/include/footer.html", function(data){
 		$("footer").append(data);
 	});
 	//加载aside
-	$.get("/html/include/aside.html", function(data){
-		$("aside").append(data);
-	});
-
-	$(function(){
-		/* 查询是否有登录用户 */
-		let user = $.cookie("loginUser");
-		if (user){
-			/*$(".login_reg").html(`<a href="${user}"></a>`);*/
-			$(".aside-t").on("click","i",function(){
-				if($(this).attr('data-id') === "gouwuchekong"){
-					
-					
-				}else if($(this).attr('data-id') === "wujiaoxing"){
-					
-				}else{
-					
-				}
-			})
+	$.ajax({
+		url :"/html/include/aside.html",
+		type : "get",
+		success : function(data){
+			$("aside").append(data);
+			// 判断是否有登录成功的用户信息
+			$.cookie.json = true;
+			let user = $.cookie("loginUser");
+			if (user) {
+				$(".register-info a").text(user.name);
+				$(".tuichu a").text("退出").click(function(){
+					$.cookie('loginUser','',{expires : -1});  //清除cookies，重定向
+					window.location="/index.html";
+				})		
+			}
 		}
-		
-	})
+	});
+	/*$.get("/html/include/aside.html", function(data){
+		$("aside").append(data);
+	});*/
 });

@@ -20,6 +20,8 @@
 		border: 1px solid #ccc;
 		width: 400px;
 		height: 30px;
+		padding-left: 8px;
+		box-sizing: border-box;
 	}
 	h2 {
 		height: 38px;
@@ -28,15 +30,20 @@
 	label {
 		color: red;
 	}
-	.log_form {
+	.login_form {
 		width: 500px;
 		margin:0 auto;
 		text-align: center;
 	}
 	.login-but input[type='submit'] {
 		height: 50px;
-		width: 300px;
-		margin-left: 100px;
+		width: 190px;
+		margin-top: 20px; 
 		font-size: 18px;
+		border-radius: 5px;
+	}
+	.login-but input[type='submit']:hover {
+		background-color: #ccc;
+		color: #fff;
 	}
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>详情页</title>
+	<script src="../lib/requirejs/require.js" data-main="/js/detail"></script>
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/detail.css">
+	<link rel="stylesheet" type="text/css" href="/iconfont/iconfont.css">
+</head>
+<body>
+<header></header>
+<div class="top"></div>
+<div class="detail"></div>
+<script type="text/html" id="detail_template">
+  <!-- 模板引擎 -->
+        <div class="detail-l">
+			<img class="img" src="{{img}}" style="width: 400px">
+		</div>
+		<div class="detail-r">
+			<table>
+				<thead>
+					<td class="title">{{title}}</td>
+					<td class="id" style="display: none;">{{id}}</td>
+				</thead>
+				<tbody>
+					<tr>
+						<td>价格：</td>
+						<td  class="price"><span>{{price}}</span></td>
+					</tr>
+					<tr>
+						<td>收藏：</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>购买数量：</td>
+						<td><button class="minus">-</button><input type="text" value="1" size="2" class="amount"><button class="add">+</button></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<td><a href="#" class="addToCart"><i class="iconfont icon-gouwuchekong"></i>加入购物车</a><a href="#" class="buy">购买</a></td>
+				</tfoot>			
+			</table>
+		</div>	
+</script>
+<footer></footer>
+<aside></aside>
+</body>
+</html>
+
+			
+
+
